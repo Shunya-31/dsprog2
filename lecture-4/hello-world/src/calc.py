@@ -35,6 +35,7 @@ class CalculatorApp(ft.Container):
     def __init__(self):
         super().__init__()
         self.reset()
+        
 
         self.result = ft.Text(value="0", color=ft.Colors.WHITE, size=20)
         self.width = 350
@@ -60,7 +61,7 @@ class CalculatorApp(ft.Container):
                         ActionButton(text="*", button_clicked=self.button_clicked),
                     ]
                 ),
-                
+
                 ft.Row(
                     controls=[
                         DigitButton(text="4", button_clicked=self.button_clicked),
