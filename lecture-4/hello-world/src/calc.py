@@ -60,6 +60,7 @@ class CalculatorApp(ft.Container):
                         ActionButton(text="*", button_clicked=self.button_clicked),
                     ]
                 ),
+                
                 ft.Row(
                     controls=[
                         DigitButton(text="4", button_clicked=self.button_clicked),
